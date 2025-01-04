@@ -1,0 +1,45 @@
+Informe del paquete
+
+-----------------------------------------------------------------------------
+Documento:
+Nombre: Pag Hoja de vida alejandro.ai
+Modo de color: Color RGB
+Perfil de color: sRGB IEC61966-2.1
+Unidades de regla: píxeles
+Dimensiones de la mesa de trabajo: 1080 px x 1259 px
+Mostrar imágenes en modo contorno: Desactivado
+Resaltar fuentes sustituidas: Desactivado
+Resaltar glifos sustituidos: Desactivado
+Conservar capacidad de edición de texto
+Simular papel de color: Desactivado
+
+-----------------------------------------------------------------------------
+Objetos de tintas planas:
+
+-----------------------------------------------------------------------------
+Fuentes no disponibles:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes protegidas no empaquetadas:Ninguno
+
+-----------------------------------------------------------------------------
+Fuentes:
+Erstoria Regular (OTF)
+Great Day Bold Personal Use (TrueType)
+Montserrat Bold (TrueType)
+Montserrat ExtraBold (TrueType)
+Montserrat SemiBold (TrueType)
+Montserrat Regular (TrueType)
+Montserrat Medium (TrueType)
+
+-----------------------------------------------------------------------------
+Fuentes incrustadas:
+Ninguno
+
+-----------------------------------------------------------------------------
+Enlaces no disponibles:
+Ninguno
+
+-----------------------------------------------------------------------------
+Imágenes enlazadas:
+Ninguno
