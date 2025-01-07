@@ -6,6 +6,9 @@
     font-family: 'Erstoria ', sans-serif;
   }
 
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
+
   @font-face {
     font-family: 'Erstoria';
     src: url('fonts/Erstoria.otf') format('opentype');
@@ -21,6 +24,12 @@
 --color-negro: #1a1225;
 --color-azul-fondo: #003569;    
 --color-hover: #8a8787;
+--color-texto-gris: #D3D3D3; 
+--color-texto-dorado: #FFD700;
+ --color-texto-verde: #98FB98;
+  --color-texto-azul-claro: #87CEEB;
+   --color-texto-rosado: #FFC0CB;
+    --color-texto-beige: #F5F5DC;
 }
   
   body {
@@ -28,6 +37,7 @@
 
     background-position: center;
     background-size: cover;
+    
 
   }
   header ul {
@@ -114,13 +124,16 @@ header ul li a:hover::before {
 header {
     position: relative;
     padding:0  2 rem ;
+    height: 10vh;
+   
+
 
 }
 
 .navbar {
     width: 100%;
     height: 60 px;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0  auto;
     display: flex;
     align-items: center;
@@ -149,7 +162,7 @@ header {
     display: block;
     position: relative; 
     transition: color 0.3s ease;
-    font-weight: 100;
+    font-weight: 500;
     font-family: "Montserrat";
 
     
@@ -177,6 +190,7 @@ header {
  }
 
  .dropdown_menu {
+    z-index: 100;
     position: absolute;
     display: none;
     right: 2rem;
@@ -192,6 +206,7 @@ header {
  }
 
  .dropdown_menu li {
+    
     padding: 0.7 rem ;
     display: flex;
     justify-content: center;
@@ -200,28 +215,282 @@ header {
 /* TITTLE ZONE 1*/
 
 .tittleZone{
-    height: 100vh;
+    height: 90vh;
     display: flex;
     justify-content: center;
-    align-content:space-around;
+    align-content:center;
+    align-items: center;
     flex-direction: row;
+    box-sizing: border-box;
+   
+   
 
 }
 
 .info{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    color: #ffffff;
 
 }
 
 .photo{
-    width: 50%;
+    width: 45%;
     display: flex;
-    justify-content: right;
+    justify-content: center;
     align-content: center;
-}
-.photo img{
     height: 90%;
+    flex-direction: column-reverse;
+    overflow: hidden;
+  
+    position: relative;
+    
+    
 }
+
+
+.info div {
+    padding-left: 6rem ;
+
+}
+
+.photo img{
+  
+    mask-image: linear-gradient(black 40% , transparent);
+    width: 100%;
+    height: 100%;
+   
+}
+
+
+.iconsContainer {
+    display: flex;
+    align-items: center;
+    animation: slide 10s linear infinite;
+    -webkit-animation: slide 10s linear infinite ;
+    overflow: hidden;
+    justify-content: space-around;
+    width: calc(100px * 20);
+    position: absolute;
+    bottom: 5%;
+  
+}
+
+.iconsContainer * {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    fill: var(--color-texto-gris);
+}
+
+
+
+
+
+@keyframes slide {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+    100% {
+        -webkit-transform: translateX((-200px * 5));
+        transform: translateX(calc(-200px * 5)); 
+    }
+}
+
+
+
+
+
+
+
+
+
+.zone_1{
+    height: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    padding: 0;
+    
+
+}
+
+.zone_1 p {
+    margin: 0; 
+    padding: 0.1rem 0; 
+}
+
+
+.zone_1 p:first-child {
+    color: var(--color-blanco); 
+    font-size: 85px;
+    font-family: 'Great Day Bold',serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    
+
+}
+
+.zone_1 p:nth-child(2) {
+    color: var(--color-texto-gris); 
+    font-weight: 100; 
+    font-family: 'Great Vibes';
+    font-size: 80px;
+
+}
+
+.zone_1 p:nth-child(3) {
+    color: var(--color-blanco); 
+    font-weight:900; 
+    font-size: 30px;
+    font-family:  "Montserrat", sans-serif;
+    width: 100%;
+   
+
+}
+
+/* Efecto de animación de texto */
+.typing-effect {
+    display: inline-block; 
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 16ch; 
+    animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
+    overflow: hidden;
+    color: var(--color-blanco); 
+    font-weight:900; 
+    font-size: 2rem;
+    font-family:  "Montserrat", sans-serif;
+    
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
+
+
+
+.Zone_2{
+    height: 33%;
+    
+
+}   
+
+.button-like {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: linear-gradient(to top, var(--color-negro)5%, var(--color-azul-fondo) 50%, var(--color-negro)95%);
+    color: var(--color-blanco);
+    text-align: center;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation-name: pulse;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    margin: 2.5rem  0;
+    font-weight: 700;
+    font-family: "Montserrat";  
+    font-size: 40px;
+    border: 2px solid var(--color-hover);
+    
+
+  
+}
+
+.button-like:hover {
+    background-color: var(--color-hover);
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 4px solid var(--color-blanco);
+    
+   
+}
+
+            
+
+@keyframes pulse {
+    0% {transform: translateY(0);}
+    50% {transform: translateY(-5px);}
+    100% {transform: translateY(0);}
+}
+    
+
+
+
+.Zone_3 {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content:flex-start;
+    font-family: "Montserrat";  
+
+}
+
+.Zone_3 p {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+.Zone_3 a {
+    display: flex;
+    align-items: flex-end;
+    text-decoration: none;
+    color: var(--color-blanco);
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.Zone_3 a:hover {
+    color: var(--color-hover);
+    transform: scale(1.05);
+}
+
+.Zone_3 ion-icon {
+    font-size: 35px;
+    color: var(--color-blanco);
+}
+
+
+
+
+/* ABOUT Me ZONE */ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Icons SKILLS ZONe */
+
+.aboutZone{
+    
+}
+
+
+
 
 
 

@@ -8,3 +8,5 @@ toggleBtn.onclick = function () {
 
     toggleBtnIcon.setAttribute('name', isOpen ? 'close-outline' : 'menu-outline');
 };
+
+
