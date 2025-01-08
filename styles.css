@@ -21,7 +21,7 @@
 :root {
     --color-blanco: #ffffff;
     --color-negro: #1a1225;
-    --color-azul-fondo: #003569;
+    --color-azul-fondo: #01478d;
     --color-hover: #8a8787;
     --color-texto-gris: #D3D3D3;
     --color-texto-dorado: #FFD700;
@@ -32,8 +32,7 @@
 }
 
 body {
-    background: linear-gradient(to right, var(--color-negro)30%, var(--color-azul-fondo) 50%, var(--color-negro) 70%);
-
+    background: linear-gradient(to right, var(--color-negro) 5%, var(--color-azul-fondo) 50%, var(--color-negro) 95%);
     background-position: center;
     background-size: cover;
 
@@ -515,7 +514,7 @@ header {
     display: flex;
     height: 100vh;
     overflow: hidden;
-    margin-top: 6vh;
+   
     justify-content: center;
     padding: 2rem;
 
@@ -545,7 +544,10 @@ header {
     flex-direction: column;
     overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
-
+    flex: 1;
+    justify-content: center;
+align-items: center;
+font-family: "Montserrat";
 
 }
 
@@ -556,6 +558,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 10vw;
+    
 
 
 }
@@ -563,6 +566,55 @@ header {
 .scroll div:nth-child(2) {
     animation: animate2 var(--t) linear infinite;
     animation-delay: calc(var(--t)/ -2);
+
+}
+
+
+
+.slider{
+    font-family: "Montserrat";
+    position: relative;
+    
+    height: 100vh;
+    /* overflow: hidden; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.item{
+    position: absolute;
+
+    top: 40%;
+ 
+    width: 30%;
+
+    height: 320px;
+    text-align: justify;
+    background: var(--color-blanco);
+    border-radius: 20px;
+    padding: 20px;
+    transition:0.5s ;
+    flex: 5;
+    margin: 0.2rem;
+
+}
+
+#prev{
+  
+    width: 50px;
+    background: #87CEEB;
+    font-size: 3rem;
+
+}
+#next{
+
+
+    width: 50px;
+    font-size: 3rem;
+    background: #87CEEB;
+    
 
 }
 
@@ -596,7 +648,7 @@ header {
 .scroll div span {
     display: inline-flex;
     margin: 10px;
-    background: #333;
+    background: rgba(0, 0, 0, 0.3);;
     color: #fff;
     padding: 5px 10px;
     border-radius: 5px;
@@ -606,6 +658,7 @@ header {
     text-align: center;
     display: flex;
     justify-content: center;
+  
 
 }
 
@@ -615,9 +668,9 @@ header {
 
 }
 
-.imgbx img {
-    scale: 0.8;
-    filter: grayscale(1);
+.imgbx img  {
+   
+    filter: grayscale(0);
 
 }
 
@@ -625,12 +678,48 @@ header {
     filter: grayscale(0);
 }
 
+.proyects{
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  
+ 
+}
+
+.proyects img {
+    width: 100%;
+    height: auto;
+    margin-top: 2rem;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center;
+
+    
+
+
+}
+
+.proyects div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.proyects img:hover {
+    transform: scale(1.1); 
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
 
 
 
 .aboutmetext {
     background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(10px);
     color: white;
     padding: 2rem;
     border-radius: 10px;
@@ -655,6 +744,31 @@ header {
     text-align: center;
     line-height: 1.6;
 }
+
+/* tittle totative */
+.rotating-text {
+    font-size: 3.5rem; 
+    font-weight: 800; 
+    color: var(--color-blanco);
+    display: inline-block;
+    font-family: "Montserrat", sans-serif; 
+    text-align: center;
+    line-height: 1.2; 
+    margin-left: 4rem;
+    text-transform: uppercase;
+    height: 6vh;
+    margin-top: 2rem;
+
+  }
+  
+  .word {
+    color: #ff5722;
+    font-style: italic;
+    font-weight: 700; 
+    transition: color 0.5s ease-in-out;
+  }
+  
+  
 
 
 
