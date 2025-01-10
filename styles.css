@@ -26,15 +26,17 @@
     --color-texto-gris: #D3D3D3;
     --color-texto-dorado: #FFD700;
     --color-texto-verde: #98FB98;
-    --color-texto-azul-claro: #87CEEB;
+    --color-texto-azul-claro: #8987eb;
     --color-texto-rosado: #FFC0CB;
     --color-texto-beige: #F5F5DC;
+    --color-texto-gris: #b3babe;
 }
 
 body {
-    background: linear-gradient(to right, var(--color-negro) 5%, var(--color-azul-fondo) 50%, var(--color-negro) 95%);
+    background: linear-gradient(to right, var(--color-negro) 10%, var(--color-azul-fondo) 50%, var(--color-negro) 90%);
     background-position: center;
     background-size: cover;
+    font-family: "Montserrat";
 
 
 }
@@ -68,26 +70,28 @@ header ul li a:hover {
     background-color: var(--color-hover);
     border-radius: 5px;
     color: var(--color-azul-fondo);
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    transform: scale(1.05);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
 }
 
 
 
-.flipUp-360 {
+
+/* .flipUp-360 {
     transition: .5s, color .10s;
     -webkit-transition: .5s, color .10s;
-    -moz-transition: .5s, color .10s;
+    -moz-transition: .5s, co
 }
 
 .flipUp-360:hover {
-    transform: translatey(-10px);
-    -webkit-transform: translatey(-10px);
-    -moz-transform: translatey(-10px);
+    transform: translatey(10px);
+    -webkit-transform: translatey(10px);
+    -moz-transform: translatey(10px);
 }
 
+ */
 
 
 
@@ -97,8 +101,7 @@ header ul li a:hover {
 
 
 
-
-
+/* 
 header ul li a::before {
     content: "";
     position: absolute;
@@ -116,7 +119,7 @@ header ul li a::before {
 header ul li a:hover::before {
     visibility: visible;
     transform: scaleX(1);
-}
+} */
 
 
 /* HEADER  */
@@ -245,6 +248,7 @@ header {
     justify-content: center;
     align-content: flex-start;
     color: #ffffff;
+    padding: 0;
 
 }
 
@@ -263,10 +267,10 @@ header {
 }
 
 
-.info div {
+/* .info div {
     padding-left: 6rem;
 
-}
+} */
 
 .photo img {
 
@@ -295,6 +299,7 @@ header {
     justify-content: center;
     align-items: center;
     fill: var(--color-texto-gris);
+  
 }
 
 
@@ -341,27 +346,35 @@ header {
 .zone_1 p:first-child {
     color: var(--color-blanco);
     font-size: 85px;
-    font-family: 'Great Day Bold', serif;
-    font-weight: 600;
+    font-weight: 700;
     letter-spacing: 1px;
+    background: linear-gradient(to right, var(--color-blanco) ,  var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
 
 
 }
 
 .zone_1 p:nth-child(2) {
     color: var(--color-texto-gris);
-    font-weight: 100;
-    font-family: 'Great Vibes';
+    font-weight: 400;
     font-size: 80px;
+    background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
 
 }
 
 .zone_1 p:nth-child(3) {
     color: var(--color-blanco);
-    font-weight: 900;
+    font-weight: 300;
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     width: 100%;
+    background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
+
 
 
 }
@@ -371,13 +384,14 @@ header {
     display: inline-block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 16ch;
+    width: 19ch;
     animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
     overflow: hidden;
     color: var(--color-blanco);
-    font-weight: 900;
-    font-size: 2rem;
-    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;    font-family: "Montserrat", sans-serif;
+  
+   
+
 
 }
 
@@ -405,7 +419,7 @@ header {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px;
-    background: linear-gradient(to top, var(--color-negro)5%, var(--color-azul-fondo) 50%, var(--color-negro)95%);
+    background: linear-gradient(to top, var(--color-texto-azul-claro)2%, var(--color-azul-fondo) 25%, var(--color-negro)90%);
     color: var(--color-blanco);
     text-align: center;
     border-radius: 10px;
@@ -416,8 +430,8 @@ header {
     animation-duration: 1s;
     animation-iteration-count: infinite;
     margin: 2.5rem 0;
-    font-weight: 700;
-    font-family: "Montserrat";
+    font-weight: 200;
+ 
     font-size: 40px;
     border: 2px solid var(--color-hover);
 
@@ -458,13 +472,13 @@ header {
     flex-direction: column;
     align-items: baseline;
     justify-content: flex-start;
-    font-family: "Montserrat";
+   
 
 }
 
 .Zone_3 p {
     font-size: 25px;
-    font-weight: bold;
+    font-weight:200;
 
 }
 
@@ -475,6 +489,7 @@ header {
     color: var(--color-blanco);
     font-size: 18px;
     transition: color 0.3s ease, transform 0.3s ease;
+    font-weight:300;
 }
 
 .Zone_3 a:hover {
@@ -483,9 +498,217 @@ header {
 }
 
 .Zone_3 ion-icon {
-    font-size: 35px;
+    font-size: 40px;
     color: var(--color-blanco);
 }
+
+
+
+
+
+
+
+main{
+    margin: 2.5rem;
+}
+
+
+
+/* About me Zone Remake*/ 
+
+.wrapper{
+    height: 90vh;
+    width: 100%;
+    /* background: rgba(255, 255, 255, 0.01); */
+     /* backdrop-filter: blur(10px); */
+  
+  
+   }
+   .titleus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .titleus h2{
+    color: var(--color-blanco) ;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0px;
+    width: 90%;
+    background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
+
+    
+  
+   }
+   .about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    
+  
+  
+   }
+  
+  .image-section {
+    width: 305px; 
+    height: 305px;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 1rem;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+    animation: spin 1s linear infinite ;
+   
+   
+    
+
+     
+  }
+  
+  .image-section img {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    /* border: 1px solid var(--color-blanco); */
+    display: block;  
+    background: var(--color-negro);
+   
+    
+    
+  
+   }
+
+
+
+
+   @property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+
+.image-section::after,
+.image-section::before {
+    content: '';
+    --angle: 0deg;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    padding: 3px;
+    background: conic-gradient(from var(--angle), var(--color-texto-azul-claro), transparent);
+    animation: spin 10s linear infinite;
+    border-radius: 10px;
+
+
+}
+
+.image-section::before {
+    filter: blur(3rem);
+    opacity: (0.5);
+}
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+
+    }
+
+    100% {
+        --angle: 360deg;
+    }
+}
+
+  
+   
+   .about-article {
+    width: 70%;
+    max-width: 100%; 
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    justify-items: center;
+    text-align: left;
+    overflow-wrap: break-word; 
+    word-wrap: break-word; 
+    box-sizing: border-box;
+  }
+  
+   #h3{
+    font-size: 1.5rem;
+    font-weight:500;
+    color:var(--color-texto-gris);
+    margin-top:0 ;
+    
+    
+  
+   }
+  
+   .about-article p{
+    font-size: 1.5rem;
+    margin-top: 40px;
+    color: var(--color-blanco);
+  
+   }
+
+   .buttonA {
+    text-align: left; 
+    margin-top: 30px;
+}
+
+.buttonA a {
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 1.2rem; 
+    font-weight: 200; 
+    color:var(--color-blanco);
+    background: linear-gradient(to right, transparent 10%, var(--color-texto-azul-claro));
+    border: 2px solid #007bff; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.buttonA a:hover {
+  background: linear-gradient(to right, transparent 40%, var(--color-texto-azul-claro));
+    transform: scale(1.2); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -495,7 +718,7 @@ header {
 .aboutZone {
 
     display: flex;
-    height: 100vh;
+    height: 50vh;
     justify-content: center;
     align-items: center;
     padding: 2rem;
@@ -510,39 +733,71 @@ header {
 
 
 
+
 .aboutmetext {
     background: var(--color-negro);
-    /* backdrop-filter: blur(10px); */
     color: white;
     padding: 2rem;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     position: relative;
+    animation: spin 1s linear infinite delay iterati;
+    width: 25%;
+    margin: 2rem;
+    gap: 2rem;
+    
 
 }
-.aboutmetext::after, .aboutmetext::before {
 
-    content:'' ;
+
+.aboutmetext ion-icon {
+    font-size: 80px;
+    color: var(--color-blanco);
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+
+}
+
+
+
+.aboutmetext::after,
+.aboutmetext::before {
+
+    content: '';
+    --angle: 0deg;
     position: absolute;
     height: 100%;
     width: 100%;
-    
-    z-index:-1 ;
+    z-index: -1;
     padding: 3px;
-    background: conic-gradient(
-    #ffffff, 
-    #adadad, 
-    #686767,
-    #ffff);
+    background: conic-gradient(from var(--angle), var(--color-texto-azul-claro), transparent);
+    animation: spin 10s linear infinite;
+    border-radius: 10px;
+
 
 }
-.aboutmetext::before{
-    filter: blur(1.5rem)
-    opacity(0.5)
 
+.aboutmetext::before {
+    filter: blur(1.5rem);
+    opacity: (0.5);
+}
+
+@keyframes spin {
+    0% {
+        --angle: 0deg;
+
+    }
+
+    100% {
+        --angle: 360deg;
+    }
 }
 
 
@@ -551,10 +806,10 @@ header {
 
 
 .aboutmetext p:nth-child(1) {
-    margin: 3rem;
     font-size: 2rem;
     text-align: center;
     line-height: 1.6;
+    font-weight: 900;
 }
 
 .aboutmetext p:nth-child(2) {
@@ -562,6 +817,7 @@ header {
     font-size: 1.5rem;
     text-align: center;
     line-height: 1.6;
+    text-align: justify;
 }
 
 
@@ -607,7 +863,7 @@ header {
     animation: animate var(--t) linear infinite;
     animation-delay: calc(var(--t)/ -1);
     display: flex;
-    
+
 
 
 
@@ -617,7 +873,7 @@ header {
 .scroll div:nth-child(2) {
     animation: animate2 var(--t) linear infinite;
     animation-delay: calc(var(--t)/ -2);
-    
+
 }
 
 
@@ -658,7 +914,7 @@ header {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     text-align: center;
-    
+
 
 
 }
@@ -687,7 +943,7 @@ header {
 }
 
 .proyects {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
@@ -828,22 +1084,18 @@ header {
     margin: 0.2rem;
 
 }
-
+#next ,
 #prev {
 
     width: 50px;
-    background: #ebb787;
     font-size: 3rem;
+    background: rgba(255, 255, 255, 0.8);
+    /* backdrop-filter: blur(10px); */
+    color: transparent;
+    background-clip: text;
 
 }
 
-#next {
-
-    width: 50px;
-    font-size: 3rem;
-    background: #87eba0;
-
-}
 
 
 
