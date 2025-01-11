@@ -51,7 +51,7 @@ li {
     list-style: none;
 }
 
-a {
+header ul li a {
     display: flex;
     gap: 2rem;
     font-size: 1rem;
@@ -60,17 +60,16 @@ a {
     padding: 10px 35px;
     display: block;
     position: relative;
-    transition: color 0.3s ease;
+    transition: color 2s ease, filter 2s ease, transform 2s ease; 
     font-weight: 100;
     font-family: "Montserrat";
-
 }
 
 header ul li a:hover {
     background-color: var(--color-hover);
     border-radius: 5px;
     color: var(--color-azul-fondo);
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease, box-shadow 0.5s ease;
+    transition: background-color 2s ease, color 2s ease, transform 2s ease, box-shadow 2s ease; 
     transform: scale(1.2);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     cursor: pointer;
@@ -371,9 +370,9 @@ header {
     font-size: 30px;
     font-family: "Montserrat", sans-serif;
     width: 100%;
-    background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
+    /* background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
     background-clip: text;
-    color: transparent;
+    color: transparent; */
 
 
 
@@ -385,7 +384,7 @@ header {
     white-space: nowrap;
     border-right: 4px solid;
     width: 19ch;
-    animation: typing 2s steps(18), blink 0.5s infinite step-end alternate;
+    animation: typing 3s steps(18), blink 0.5s infinite step-end alternate;
     overflow: hidden;
     color: var(--color-blanco);
     font-size: 2rem;    font-family: "Montserrat", sans-serif;
@@ -471,7 +470,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: baseline;
-    justify-content: flex-start;
+    justify-content: space-between;
+    gap: 10px;
    
 
 }
@@ -484,12 +484,15 @@ header {
 
 .Zone_3 a {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
+    justify-content:  space-between;
+    gap: 10px;
     text-decoration: none;
     color: var(--color-blanco);
     font-size: 18px;
     transition: color 0.3s ease, transform 0.3s ease;
     font-weight:300;
+    ;
 }
 
 .Zone_3 a:hover {
@@ -517,7 +520,7 @@ main{
 /* About me Zone Remake*/ 
 
 .wrapper{
-    height: 90vh;
+    height: 70vh;
     width: 100%;
     /* background: rgba(255, 255, 255, 0.01); */
      /* backdrop-filter: blur(10px); */
@@ -528,6 +531,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+   
    }
    .titleus h2{
     color: var(--color-blanco) ;
@@ -546,17 +550,18 @@ main{
    }
    .about{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
+    margin:1rem 0;
+
     
   
   
    }
   
   .image-section {
-    width: 305px; 
-    height: 305px;  
+    width: 405px; 
+    height: 405px;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -573,12 +578,13 @@ main{
   }
   
   .image-section img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
     /* border: 1px solid var(--color-blanco); */
     display: block;  
     background: var(--color-negro);
+   
    
     
     
@@ -603,7 +609,7 @@ main{
     position: absolute;
     height: 100%;
     width: 100%;
-    z-index: -1000;
+    z-index: -1;
     padding: 3px;
     background: conic-gradient(from var(--angle), var(--color-texto-azul-claro), transparent);
     animation: spin 10s linear infinite;
@@ -613,8 +619,8 @@ main{
 }
 
 .image-section::before {
-    filter: blur(3rem);
-    opacity: (0.5);
+    filter: blur(10rem);
+    opacity: 0.9;
 }
 
 @keyframes spin {
@@ -673,7 +679,7 @@ main{
     font-weight: 200; 
     color:var(--color-blanco);
     background: linear-gradient(to right, transparent 10%, var(--color-texto-azul-claro));
-    border: 2px solid #007bff; 
+    border: 2px solid var(--color-texto-azul-claro); 
     border-radius: 5px; 
     text-decoration: none; 
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
@@ -718,14 +724,15 @@ main{
 .aboutZone {
 
     display: flex;
-    height: 50vh;
+   
     justify-content: center;
     align-items: center;
-    padding: 2rem;
-    min-height: 100vh;
+    padding: 1rem;
+    min-height: 55vh;
     align-content: center;
     gap: 1rem;
     font-family: "Montserrat";
+    margin-top: 2.2rem;;
 
 }
 
@@ -843,8 +850,9 @@ main{
 .Expertise {
     display: flex;
     flex-direction: row;
-    width: 95vw;
+    width: 90vw;
     overflow: hidden;
+    margin-top: 4rem;
 }
 
 .scroll {
@@ -942,41 +950,6 @@ main{
     filter: grayscale(0);
 }
 
-.proyects {
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-
-}
-
-.proyects img {
-    width: 100%;
-    height: auto;
-    /* margin-top: 2rem; */
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    display: flex;
-    justify-content: center;
-
-
-
-
-}
-
-.proyects div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-}
-
-.proyects img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
 
 
 
@@ -1059,44 +1032,140 @@ main{
 
 
 .slider {
-    font-family: "Montserrat";
     position: relative;
-    height: 100vh;
-    /* overflow: hidden; */
+    height: 80vh;
+    overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
+   
+    
+
+
+}
+
+
+.Projectstitle {
+    color: var(--color-blanco) ;
+    font-size: 46px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 2rem;
+    width:100%;
+    background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
 
 
 }
 
 .item {
     position: absolute;
-    top: 33%;
-    width: 30%;
-    height: 320px;
+    top: 50;
+    width: 35vw;
     text-align: justify;
-    background: var(--color-blanco);
+    background: #022547;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
     transition: 0.5s;
-    flex: 5;
-    margin: 0.2rem;
+    margin: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    border: 5px  solid rgba(255, 255, 255, 0.4);
+    color: var(--color-blanco);
+    backdrop-filter: blur(100px);
+    padding: 15px;
+
+        
 
 }
-#next ,
+#next,
 #prev {
+    position: relative;
 
     width: 50px;
     font-size: 3rem;
-    background: rgba(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.9);
     /* backdrop-filter: blur(10px); */
     color: transparent;
     background-clip: text;
 
 }
 
+.imgpro {
 
+width: 80%;
+border-radius: 20px;
+border: 5px  solid rgba(255, 252, 252, 0.4);
+margin-top: 10px;
+filter: blur(0.7px);
+transition: filter 0.3s ease, transform 0.3s
+
+
+}
+
+.item img:hover{
+    filter: blur(0);
+    transform: scale(1.1);
+
+
+}
+
+.item p {
+    padding:  10px 25px;
+    text-align: left;
+}
+
+.item a {
+    padding:  3px 25px;
+    text-align: left;
+    color: var(--color-blanco);
+    font-weight: 500;
+    width: 100%;
+    font-size: 1rem;
+    font-style: italic;
+
+}
+
+.item p:nth-child(2){
+    width: 100%;
+    text-align: left;
+    font-size: 1.5rem;
+    justify-self: left;
+
+    font-weight: 600;
+    
+
+}
+
+.item  p:nth-child(3){
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--color-hover);
+
+}
+
+.iconsprojects{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content:left;
+    gap: 10px;
+}
+
+.iconsprojects img{
+    width: 50px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 0;
+
+    
+    }
 
 
 
