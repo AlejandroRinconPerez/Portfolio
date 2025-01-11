@@ -535,7 +535,7 @@ main{
    }
    .titleus h2{
     color: var(--color-blanco) ;
-    font-size: 46px;
+    font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -1038,16 +1038,26 @@ main{
     display: flex;
     justify-content: space-around;
     align-items: center;
-   
-    
+    transition: filter 0.3s ease, transform 0.3s
 
 
 }
 
+/* .item :hover{
+    filter: blur(0);
+    transform: scale(1.1);
+
+
+} */
+
+
+
+
+
 
 .Projectstitle {
     color: var(--color-blanco) ;
-    font-size: 46px;
+    font-size: 3.5rem;
     font-weight: 700;
     text-transform: uppercase;
     text-align: center;
@@ -1065,7 +1075,7 @@ main{
     top: 50;
     width: 35vw;
     text-align: justify;
-    background: #022547;
+    background: #022447bd;
     border-radius: 20px;
     padding: 10px;
     transition: 0.5s;
@@ -1075,14 +1085,14 @@ main{
     justify-content: space-around;
     align-items: center;
     backdrop-filter: blur(10px);
-    border: 5px  solid rgba(255, 255, 255, 0.4);
+    /* border: 5px  solid rgba(255, 255, 255, 0.4); */
     color: var(--color-blanco);
-    backdrop-filter: blur(100px);
-    padding: 15px;
-
-        
-
 }
+
+
+
+
+
 #next,
 #prev {
     position: relative;
@@ -1166,6 +1176,229 @@ transition: filter 0.3s ease, transform 0.3s
 
     
     }
+
+
+/* Services Zone */
+
+
+.servicescontainer{
+
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    align-items: center;
+    min-height: 75vh;
+    gap: 5rem;
+
+}
+.textservioces{
+    width: 40%;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items:flex-start;
+    gap: 5rem;
+    margin-left: 2rem;
+}
+
+.neon {
+    color: var(--color-blanco);
+    text-align: left;
+    animation: flicker 1.5s  infinite alternate;
+    color: var(--color-blanco);
+    font-size: 2rem;
+
+    
+}
+
+@keyframes flicker {
+0%,
+18%,
+22%,
+25%,
+53%,
+57%,
+100%{
+    text-shadow: 0 0 4px #ffffff, 0 0 11px #ffffff, 0 0 19px #ffffff,
+    0 0 40px rgba(137, 135, 235, 1), 0 0 80px rgba(137, 135, 235, 1),
+    0 0 90px rgba(137, 135, 235, 1), 0 0 100px rgba(137, 135, 235, 1);
+}
+5%,
+20%,
+24%,
+50%,
+80%{
+    text-shadow: none;
+
+}
+
+
+}
+
+ #h2services{
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: left;
+    margin-top: 2rem;
+    width:100%;
+    background: linear-gradient(to right,var(--color-texto-azul-claro),  var(--color-blanco));
+    background-clip: text;
+    color: transparent;
+    
+
+}
+
+
+
+
+
+.servicescontainer ul {
+    position: relative;
+    transform-style: preserve-3d;
+    perspective: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    transition: 0.5s;
+    justify-content: space-between;
+    flex: 2;
+
+
+}
+
+.servicescontainer ul:hover {
+    gap: 30px;
+    transform: translateZ(0px) translate(0px, 0px) rotate(0deg) !important;
+    
+
+    
+}
+
+.servicescontainer ul li {
+
+    position: relative;
+    list-style: none;
+    transform-style: preserve-3d;
+    width: 450px;
+    height: 100px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: 0.5s;
+    box-shadow: 0 -15px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.servicescontainer ul li .box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 20px;
+    transition: 0.5s ease;
+
+}
+
+.servicescontainer ul li:hover .box  {
+    transform: translateX(-15px);
+    
+    
+
+}
+
+.serviceslist:hover li{
+    transform: translateZ(0px) translate(0px, 0px) rotate(0deg) !important;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.25);
+    
+}
+
+.servicescontainer ul li .box ion-icon{
+    color: var(--color-blanco);
+
+    font-size: 45px;
+    margin-right: 5px;
+    
+
+
+}
+
+.servicescontainer ul li .content{
+    width: 100%;
+    cursor: pointer;
+
+}
+
+.servicescontainer ul li .content h4 {
+    font-weight:600;
+    color: var(--color-hover);
+    transition: 0.5s ease;
+}
+
+.servicescontainer ul li .content p {
+
+position: relative;
+width: 100%;
+line-height: 1em;
+color: var(--color-hover);
+transition:0.5s ease;
+font-size: 0.8rem;
+
+
+
+}
+
+.servicescontainer ul li:hover .content h4,
+.servicescontainer ul li:hover .content p {
+    color: var(--color-blanco);
+
+
+}
+
+.servicescontainer ul li:nth-child(1){
+    transform: translateZ(-75px) translate(-80px, 40px) rotate(-15deg);
+}
+
+
+.servicescontainer ul li:nth-child(2){
+    transform: translateZ(80px) translate(50px, 20px) rotate(10deg);
+}
+
+
+
+.servicescontainer ul li:nth-child(3){
+    transform: translateZ(75px) translate(0, -30px) rotate(-30deg);
+}
+
+
+
+.servicescontainer ul li:nth-child(4){
+    transform: translateZ(20px) translate(-100px, -25px) rotate(20deg);
+
+}
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
 
 
 
