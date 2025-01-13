@@ -162,8 +162,9 @@ header {
 box-sizing: border-box;
     width:90%;
     height: 60 px;
-    max-width: 100%;
-    margin: 0 auto;
+    width: 80%;
+    
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -245,6 +246,7 @@ box-sizing: border-box;
     /* transition: color 2s ease, filter 2s ease, transform 2s ease;  */
     font-weight: 100;
     font-family: "Montserrat";
+   
 
 
 
@@ -258,13 +260,12 @@ box-sizing: border-box;
     top: 60px;
     height: 0;
     width: 300px;
-    background: rgba(255, 255, 255, 0.1);
+    background: #5452c6dd;
     backdrop-filter: blur(15px);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
     transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     position: fixed;
- 
     left: 5%;
     z-index: 10000;
 
@@ -601,7 +602,7 @@ main {
 .wrapper{
     height: auto;
     width: 95%;
-    padding: 0 2.5vw;
+    padding:  2.5vw;
     /* background: rgba(255, 255, 255, 0.01); */
      /* backdrop-filter: blur(10px); */
   
@@ -730,6 +731,7 @@ main {
     word-wrap: break-word; 
     box-sizing: border-box;
     padding: 1vw;
+    text-align: justify;
   }
   
    #h3{
@@ -806,15 +808,16 @@ main {
 .aboutZone {
 
     display: flex;
-    width: 95%;
-    height: 45vh;
+    width: 100%;
     justify-content:space-around;
     align-items: center;
     /* min-height: 55vh; */
     align-content: center;
-    gap: 1rem;
+    gap: 2rem;
     font-family: "Montserrat";
     flex-wrap: nowrap;
+    flex-wrap: wrap;
+   
     
 
 }
@@ -835,10 +838,8 @@ main {
     align-items: center;
     position: relative;
     animation: spin 1s linear infinite ;
-
-    width: 45vw;
-    max-width: 400px;
-
+    width: 30vw;
+    min-width: 300px;
     gap: 2rem;
     
 
@@ -846,7 +847,7 @@ main {
 
 
 .aboutmetext ion-icon {
-    font-size: 80px;
+    font-size: 65px;
     color: var(--color-blanco);
 }
 
@@ -898,16 +899,17 @@ main {
 
 
 .aboutmetext p:nth-child(1) {
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     line-height: 1.6;
     font-weight: 900;
 }
 
-.aboutmetext p:nth-child(2) {
+.aboutmetext p:nth-child(3) {
 
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: center;
+    flex: 2;
 
     text-align: justify;
 }
@@ -988,6 +990,7 @@ main {
     color: var(--color-blanco);
     border-radius: 10px;
     border-bottom: 10px solid #8987eb94; 
+    width: 40vw;
     
 
   }
@@ -1018,7 +1021,8 @@ main {
     background:  #8987eb94 ;
     backdrop-filter: blur(8px);
     animation: fadeIn 0.3s ease;
-    width: 45vw;
+    width: 40vw;
+    
     border-radius: 10px;
     color: var(--color-blanco);
 text-align: left;
@@ -1075,6 +1079,7 @@ width: 100%;
     justify-content: space-around;
     font-family: "Montserrat";
     width: 95%;
+    
 
 }
 
@@ -1254,6 +1259,7 @@ width: 100%;
     width: 80vw;
 
 
+
 }
 
 /* .item :hover{
@@ -1321,7 +1327,7 @@ width: 100%;
 
 .imgpro {
 
-width: 80%;
+width: 90%;
 border-radius: 20px;
 border: 5px  solid rgba(255, 252, 252, 0.274);
 margin-top: 10px;
@@ -1398,7 +1404,7 @@ transition: filter 0.3s ease, transform 0.3s
 
     display: flex;
     justify-content:center;
-    flex-direction: row;
+    flex-direction:column;
     align-items:center;
     min-height: 65vh;
     gap: 1rem;
@@ -1472,7 +1478,7 @@ transition: filter 0.3s ease, transform 0.3s
 
 .servicescontainer ul {
     position: relative;
-    width: 45%;
+  
     transform-style: preserve-3d;
     perspective: 500px;
     display: flex;
@@ -1698,6 +1704,11 @@ font-size: 0.8rem;
     .footer-column {
       flex: 1 1 100%;
     }
+
+  
+
+
+
   }
   
   @media (max-width: 576px) {
@@ -1737,6 +1748,8 @@ font-size: 0.8rem;
     .navbar .links {
         display: none;
     }
+
+  
 
     header {
         background: transparent;
@@ -1791,26 +1804,40 @@ font-size: 0.8rem;
         flex-direction: column;
         height: auto;
         margin: 1vh;
+        width: 90%;
 
 
     }
 
     .aboutmetext{
-        width: 50vw;
+        width: 60vw;
     }
 
 
     .slider{
-        height: 70vh;
+        height: 80vh;
+        width: 85vw;
+
+    }   
+    .item {
+        width: 55vw;
+
+
 
     }
-    .item {
+
+    .accordion-title {
 
         width: 50vw;
 
+    }
 
+    .accordion-content {
+
+        width: 50vw;
 
     }
+
 
 
 
@@ -1818,6 +1845,90 @@ font-size: 0.8rem;
 
 
 @media(max-width: 768px) {
+    .about-article {
+        width: 95%;
+
+
+
+    }
+
+
+    #h3{
+        font-size: 1.5rem;
+     
+
+       }
+
+       .about-article p{
+        font-size: 1.5rem;
+
+
+       }
+
+    .Expertise {
+        width: 95%;
+    }
+
+
+    .rotating-text{
+   
+   font-size: 2rem;
+    } 
+
+    .accordion-title {
+
+        width: 70vw;
+
+    }
+
+    .accordion-content {
+
+        width: 70vw;
+
+    }
+
+    .servicescontainer  {
+        width: 90%;
+
+
+    }
+
+    #h2services{
+        text-align: center;
+
+    }
+
+    .servicescontainer ul li {
+        width: 50vw;
+
+
+
+
+    }
+
+    .technologiesText{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+
+
+    }
+    .technologiesText p {
+
+        margin: 0;
+        height: auto;
+
+
+    }
+
+
+    
+}
+
+
+
+@media(max-width: 650px) {
 
     .Expertise {
         width: 90%;
@@ -1826,10 +1937,58 @@ font-size: 0.8rem;
 
     .rotating-text{
    
-    font-size: 2.5rem;
+    font-size: 2rem;
     }
+
+    .accordion-title {
+
+        width: 80vw;
+        font-size: 1rem;
+
+    }
+
+    .accordion-content {
+
+        width: 80vw;
+        
+
+    }
+
+
+    .servicescontainer ul li {
+        width: 50vw;
+
+
+
+
+    }
+
+    .textservioces{
+        width: 80%;
+        ;
+    }
+    .servicescontainer{
+
+    align-items: star;
+    }
+.servicescontainer ul li {
+    padding: 2vw;
+    width: 80vw;
+    transform: translateZ(0px) translate(0px, 0px) rotate(0deg) !important;
+    
+
+
+
+}
+
+.neon{
+    display: none;
+}
+
+
     
 }
+
 
 @media(max-width: 576px) {
     .dropdown_menu {
@@ -1839,6 +1998,161 @@ font-size: 0.8rem;
         top: 0;
         z-index: 10000;
     }
+    .rotating-text{
+   
+        font-size: 1.5rem;
+         } 
+         .item {
+            width: 70vw;
 
 
-};
+
+         }
+            #next,
+            #prev{
+                color: #02244757
+            }
+            .zone_1  {
+                width: 100%;
+
+
+            }
+        
+            .zone_1 p:first-child {
+             font-size: 70px;
+             text-align: center;
+            
+            
+            }
+
+            .zone_1 p:nth-child(2) {
+                font-size: 60px;
+                text-align: center;
+    
+            }
+
+            .info {
+            align-items: center;
+        
+        
+            }
+
+
+
+            .image-section {
+                width: 360px; 
+                height: 360px;  
+              
+               
+               
+                
+            
+                 
+              }
+              
+              .image-section img {
+                height: 350px;
+                width: 350pxx;
+              
+            
+               
+               
+                
+                
+              
+               }
+
+
+}
+
+
+@media(max-width: 474px) {
+    #textcertification {
+        font-size: 2rem;
+    }
+
+
+
+    .zone_1  {
+        width: 100%;
+
+
+    }
+
+    .zone_1 p:first-child {
+     font-size: 60px;
+     text-align: center;
+    
+    
+    }
+
+    .zone_1 p:nth-child(2) {
+        font-size: 50px;
+        text-align: center;
+
+    }
+
+
+    .image-section {
+        width: 330px; 
+        height: 330px;  
+      
+       
+       
+        
+    
+         
+      }
+      
+      .image-section img {
+        height: 335px;
+        width: 335xx;
+      
+    
+       
+       
+        
+        
+      
+       }
+
+   
+
+
+
+
+
+
+}
+
+@media(max-width: 420px) {
+    .Certition h2 {
+        font-size: 2.8rem;
+    }
+
+    .zone_1  {
+        width: 100%;
+
+
+    }
+
+    .zone_1 p:first-child {
+     font-size: 45px;
+     text-align: center;
+    
+    
+    }
+
+    .zone_1 p:nth-child(2) {
+        font-size: 35px;
+        text-align: center;
+
+    }
+   
+
+
+
+
+
+
+}
