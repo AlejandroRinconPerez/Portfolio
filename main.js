@@ -70,32 +70,45 @@ let prev = document.getElementById("prev");
 let active = 3;
 
 function loadShow() {
-  let stt = 0;
-  items[active].style.transform = `none`;
-  items[active].style.zIndex = 1;
-  items[active].style.filter = `none`;
-  items[active].style.opacity = 1;
+  const blurEffect = `blur(2px)`;
+  const perspective = `perspective(16px)`;
+  const itemsLength = items.length;
+  const maxOpacityIndex = 2;
+  const scaleStep = 0.2;
+  const translateStep = 120;
 
-  for (var i = active + 1; i < items.length; i++) {
-    stt++;
-    items[i].style.transform = `translateX(${stt * 120}px) scale(${
-      1 - 0.2 * stt
-    }) perspective(16px)  rotateY(-1deg)`;
-    items[i].style.zIndex = -stt;
-    items[i].style.filter = `blur(2px)`;
-    items[i].style.opacity = stt > 2 ? 0 : 0.6;
-  }
-  stt = 0;
-  for (var i = active - 1; i >= 0; i--) {
-    stt++;
-    items[i].style.transform = `translateX(${stt * -120}px) scale(${
-      1 - 0.2 * stt
-    }) perspective(16px)  rotateY(1deg)`;
-    items[i].style.zIndex = -stt;
-    items[i].style.filter = `blur(2px)`;
-    items[i].style.opacity = stt > 2 ? 0 : 0.6;
+  
+  const activeItem = items[active];
+  activeItem.style.transform = `none`;
+  activeItem.style.zIndex = 1;
+  activeItem.style.filter = `none`;
+  activeItem.style.opacity = 1;
+
+  
+  for (let i = 0; i < itemsLength; i++) {
+    if (i === active) continue;
+
+    const offset = i - active;
+    const stt = Math.abs(offset); 
+    const direction = offset > 0 ? 1 : -1; 
+
+    const transform = `translateX(${stt * translateStep * direction}px) scale(${
+      1 - scaleStep * stt
+    }) ${perspective} rotateY(${direction * -1}deg)`;
+
+    const zIndex = -stt;
+    const filter = blurEffect;
+    const opacity = stt > maxOpacityIndex ? 0 : 0.6;
+
+   
+    const item = items[i];
+    item.style.transform = transform;
+    item.style.zIndex = zIndex;
+    item.style.filter = filter;
+    item.style.opacity = opacity;
   }
 }
+
 
 loadShow();
 
@@ -117,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function() {
       title.addEventListener('click', function() {
           const content = this.nextElementSibling;
 
-          // Cerrar otros contenidos abiertos
+        
           document.querySelectorAll('.accordion-content').forEach(item => {
               if (item !== content) {
                   item.style.display = 'none';

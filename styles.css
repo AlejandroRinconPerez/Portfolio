@@ -6,6 +6,10 @@
     scroll-behavior: smooth;
 }
 
+html {
+    scroll-behavior: smooth !important;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
 
@@ -662,6 +666,7 @@ main {
     border-radius: 50%;
     overflow: hidden;
     animation: spin 1s linear infinite ;
+    filter: drop-shadow(0px 0px 1px var(--color-texto-azul-claro));
    
    
     
@@ -676,6 +681,7 @@ main {
     /* border: 1px solid var(--color-blanco); */
     display: block;  
     background: var(--color-negro);
+   
 
    
    
@@ -1278,7 +1284,7 @@ width: 100%;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    transition: filter 0.3s ease, transform 0.3s;
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     width: 80vw;
 
 
@@ -1318,7 +1324,7 @@ width: 100%;
     top: 50;
     width: 35vw;
     text-align: justify;
-    background: #8987eb3f;
+    background: #2d2c75b3;
     border-radius: 20px;
     padding: 10px;
     transition: 0.5s;
@@ -1327,7 +1333,7 @@ width: 100%;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    backdrop-filter: blur(10px);
+    transition: transform 0.5s ease-out, opacity 0.5s ease-out;
     /* border: 5px  solid rgba(255, 255, 255, 0.4); */
     color: var(--color-blanco);
 }
@@ -1357,7 +1363,7 @@ width: 90%;
 border-radius: 20px;
 border: 5px  solid rgba(255, 252, 252, 0.274);
 margin-top: 10px;
-filter: blur(0.7px);
+
 transition: filter 0.3s ease, transform 0.3s
 
 
@@ -1433,7 +1439,6 @@ transition: filter 0.3s ease, transform 0.3s
     flex-direction:row;
     align-items:center;
     min-height: 65vh;
-
     width: 100%;
     box-sizing: border-box;
    
@@ -2103,6 +2108,12 @@ font-size: 0.8rem;
 
 
 @media(max-width: 474px) {
+
+    .Expertise {
+        flex-direction: column;
+
+
+    }
     #textcertification {
         font-size: 2rem;
     }
