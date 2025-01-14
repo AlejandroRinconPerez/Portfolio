@@ -246,6 +246,11 @@ box-sizing: border-box;
     /* transition: color 2s ease, filter 2s ease, transform 2s ease;  */
     font-weight: 100;
     font-family: "Montserrat";
+    border-bottom: 1px solid #ffffff6c;
+    border-radius: 5px;
+    width:80%;
+    text-align: center;
+    font-weight: 600;
    
 
 
@@ -260,7 +265,7 @@ box-sizing: border-box;
     top: 60px;
     height: 0;
     width: 300px;
-    background: #5452c6dd;
+    background:#022447f1;
     backdrop-filter: blur(15px);
     border-radius: 20px;
     overflow: hidden;
@@ -448,7 +453,7 @@ box-sizing: border-box;
     display: inline-block;
     white-space: nowrap;
     border-right: 4px solid;
-    width: 19ch;
+    width: 16ch;
     animation: typing 3s steps(18), blink 0.5s infinite step-end alternate;
     overflow: hidden;
     color: var(--color-blanco);
@@ -1244,7 +1249,19 @@ width: 100%;
 
 
 
+.ProjectsFatherContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
+.boxslider{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 45vw;
+}
 
 
 
@@ -1318,10 +1335,12 @@ width: 100%;
 
     width: 50px;
     font-size: 3rem;
-    background: rgba(255, 255, 255, 0.9);
-    color: transparent;
-    background-clip: text;
+    background:#8987eb3f;
+    color:var(--color-blanco); 
+    border-radius: 50%;
     z-index: 100;
+    text-align: center;
+
 
 }
 
@@ -1404,10 +1423,10 @@ transition: filter 0.3s ease, transform 0.3s
 
     display: flex;
     justify-content:center;
-    flex-direction:column;
+    flex-direction:row;
     align-items:center;
     min-height: 65vh;
-    gap: 1rem;
+
     width: 100%;
     box-sizing: border-box;
    
@@ -1974,6 +1993,7 @@ font-size: 0.8rem;
 .servicescontainer ul li {
     padding: 2vw;
     width: 80vw;
+    margin: 1vh;
     transform: translateZ(0px) translate(0px, 0px) rotate(0deg) !important;
     
 
@@ -2008,10 +2028,7 @@ font-size: 0.8rem;
 
 
          }
-            #next,
-            #prev{
-                color: #02244757
-            }
+          
             .zone_1  {
                 width: 100%;
 
@@ -2070,6 +2087,23 @@ font-size: 0.8rem;
     #textcertification {
         font-size: 2rem;
     }
+
+    .titleus h2 {
+
+        font-size: 2rem;
+    }
+
+    .Projectstitle {
+        font-size: 2rem;
+
+    }
+
+    #h2services{
+        font-size: 2rem;
+    }
+    
+
+
 
 
 
@@ -2135,6 +2169,9 @@ font-size: 0.8rem;
 
 
     }
+    .item{
+        width: 90vw;
+    }
 
     .zone_1 p:first-child {
      font-size: 45px;
@@ -2156,3 +2193,15 @@ font-size: 0.8rem;
 
 
 }
+
+@media(max-width: 420px) {
+
+
+
+.slider{
+    height: 90vh;
+
+}
+
+}
+    
