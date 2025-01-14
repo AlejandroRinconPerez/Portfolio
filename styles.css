@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto Flex", sans-serif;
+    scroll-behavior: smooth;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
@@ -849,7 +850,7 @@ main {
     animation: spin 1s linear infinite ;
     width: 30vw;
     max-width: 400px;
-    min-width: 400px;
+    min-width: 300px;
     gap: 2rem;
     
 
