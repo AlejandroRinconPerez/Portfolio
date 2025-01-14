@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Erstoria ', sans-serif;
+    font-family: "Roboto Flex", sans-serif;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Playwrite+AU+SA:wght@100..400&display=swap');
@@ -36,13 +36,17 @@ body {
     background: linear-gradient(to right, var(--color-negro) 10%, var(--color-azul-fondo) 50%, var(--color-negro) 90%);
     background-position: center;
     background-size: cover;
-    font-family: "Montserrat";
+    font-family: "Roboto Flex","Montserrat";
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
 
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 header ul {
@@ -79,7 +83,7 @@ header ul li a {
     position: relative;
     transition: color 2s ease, filter 2s ease, transform 2s ease; 
     font-weight: 100;
-    font-family: "Montserrat";
+    
 }
 
 header ul li a:hover {
@@ -193,7 +197,7 @@ box-sizing: border-box;
     position: relative;
     transition: color 0.3s ease;
     font-weight: 500;
-    font-family: "Montserrat";
+   
 
 
 
@@ -245,7 +249,6 @@ box-sizing: border-box;
     position: relative;
     /* transition: color 2s ease, filter 2s ease, transform 2s ease;  */
     font-weight: 100;
-    font-family: "Montserrat";
     border-bottom: 1px solid #ffffff6c;
     border-radius: 5px;
     width:80%;
@@ -438,7 +441,8 @@ box-sizing: border-box;
     color: var(--color-blanco);
     font-weight: 300;
     font-size: 30px;
-    font-family: "Montserrat", sans-serif;
+  
+    
     width: 100%;
     /* background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
     background-clip: text;
@@ -457,7 +461,8 @@ box-sizing: border-box;
     animation: typing 3s steps(18), blink 0.5s infinite step-end alternate;
     overflow: hidden;
     color: var(--color-blanco);
-    font-size: 2rem;    font-family: "Montserrat", sans-serif;
+   
+    
   
    
 
@@ -819,7 +824,6 @@ main {
     /* min-height: 55vh; */
     align-content: center;
     gap: 2rem;
-    font-family: "Montserrat";
     flex-wrap: nowrap;
     flex-wrap: wrap;
    
@@ -844,7 +848,8 @@ main {
     position: relative;
     animation: spin 1s linear infinite ;
     width: 30vw;
-    min-width: 300px;
+    max-width: 400px;
+    min-width: 400px;
     gap: 2rem;
     
 
@@ -1082,7 +1087,7 @@ width: 100%;
     overflow: hidden;
     -webkit-mask-image: linear-gradient(90deg, transparent, #fff 20%, #fff 80%, transparent);
     justify-content: space-around;
-    font-family: "Montserrat";
+   
     width: 95%;
     
 
@@ -1212,7 +1217,7 @@ width: 100%;
     font-weight: 500;
     color: var(--color-blanco);
     display: inline-block;
-    font-family: "Montserrat", sans-serif;
+
     text-align: left;
     line-height: 1.2;
     margin-left: 4rem;
@@ -1267,13 +1272,14 @@ width: 100%;
 
 .slider {
     position: relative;
-    height: 70vh;
+    height: 80vh;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: filter 0.3s ease, transform 0.3s;
     width: 80vw;
+
 
 
 
@@ -1834,7 +1840,7 @@ font-size: 0.8rem;
 
 
     .slider{
-        height: 50vh;
+        height: 70vh;
         width: 85vw;
 
     }   
@@ -1861,8 +1867,16 @@ font-size: 0.8rem;
 
 
 }
+@media(max-with: 821){
+
+    .slider{
+        height: 50vh;
+        width: 85vw;
+
+    }   
 
 
+}
 @media(max-width: 768px) {
     .about-article {
         width: 95%;
@@ -1940,6 +1954,7 @@ font-size: 0.8rem;
 
 
     }
+
 
 
     
