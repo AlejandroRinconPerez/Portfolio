@@ -168,15 +168,14 @@ header {
 .navbar {
    
     height: 6vh;
-box-sizing: border-box;
+    box-sizing: border-box;
     width:90%;
     height: 60 px;
     width: 80%;
     
-    
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
 
 
 }
@@ -193,15 +192,16 @@ box-sizing: border-box;
 
 .navbar .links a {
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
     font-size: 1rem;
     text-decoration: none;
     color: var(--color-blanco);
-    padding: 10px 35px;
+    /* padding: 10px 35px; */
     display: block;
     position: relative;
     transition: color 0.3s ease;
     font-weight: 500;
+    width: 100%;
    
 
 
@@ -330,7 +330,7 @@ box-sizing: border-box;
 }
 
 .photo {
-    width: 50%;
+    width: 60%;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -352,7 +352,7 @@ box-sizing: border-box;
 .photo img {
 
     mask-image: linear-gradient(black 40%, transparent);
-    width: 100%;
+    width: 45vw;
     height: 100%;
 
 }
@@ -1279,13 +1279,13 @@ width: 100%;
 
 .slider {
     position: relative;
-    height: 80vh;
+    height: 600px;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
-    width: 80vw;
+    width: 900px;
 
 
 
@@ -1322,7 +1322,7 @@ width: 100%;
 .item {
     position: absolute;
     top: 50;
-    width: 35vw;
+    width:450px;
     text-align: justify;
     background: #2d2c75b3;
     border-radius: 20px;
