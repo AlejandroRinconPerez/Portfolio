@@ -429,13 +429,17 @@ header {
 }
 
 
-.zone_1 p:first-child {
+.zone_1 p:first-child { 
     color: var(--color-blanco);
     font-size: 85px;
     font-weight: 700;
     letter-spacing: 1px;
     background: linear-gradient(to right, var(--color-blanco) ,  var(--color-texto-azul-claro),  var(--color-blanco));
+    
+    -webkit-background-clip: text;
     background-clip: text !important;
+    
+
     color: transparent;
 
 
@@ -447,6 +451,8 @@ header {
     font-size: 80px;
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
     background-clip: text !important;
+    transform: translateZ(0);
+
 
     color: transparent;
 
@@ -645,7 +651,11 @@ main {
     /* padding: 30px 0px; */
     width: 90%;
     background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
+    -webkit-background-clip: text;
+
     background-clip: text !important;
+    transform: translateZ(0);
+
     color: transparent;
 
     
@@ -967,7 +977,11 @@ main {
     z-index: 1;
   
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
+    -webkit-background-clip: text;
+
     background-clip: text !important;
+    transform: translateZ(0);
+
     color: transparent;
 
 
@@ -1106,6 +1120,7 @@ main {
     animation: fadeIn 0.3s ease;
     width: 40vw;
     z-index: 1;
+    line-height: 2;
     
     border-radius: 10px;
     color: var(--color-blanco);
@@ -1380,6 +1395,7 @@ width: 100%;
     margin-top: 2rem;
     width:100%;
     background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
+    -webkit-background-clip: text;
     background-clip: text !important;
     color: transparent;
 
@@ -1563,6 +1579,8 @@ transition: filter 0.3s ease, transform 0.3s
     width:100%;
     background: linear-gradient(to right,var(--color-texto-azul-claro),  var(--color-blanco));
     background-clip: text !important;
+    transform: translateZ(0);
+
     color: transparent;
     
 
@@ -1734,6 +1752,8 @@ font-size: 0.8rem;
     font-size: 1.4rem;
     margin-bottom: 15px;
     background: linear-gradient(to right, var(--color-texto-azul-claro) 5%,  var(--color-blanco)90%);
+    -webkit-background-clip: text;
+
     background-clip: text;
     color: transparent;
     text-align: left;
