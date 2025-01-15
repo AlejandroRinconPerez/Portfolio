@@ -435,7 +435,7 @@ header {
     font-weight: 700;
     letter-spacing: 1px;
     background: linear-gradient(to right, var(--color-blanco) ,  var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
     color: transparent;
 
 
@@ -446,7 +446,8 @@ header {
     font-weight: 400;
     font-size: 80px;
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
+
     color: transparent;
 
 }
@@ -644,7 +645,7 @@ main {
     /* padding: 30px 0px; */
     width: 90%;
     background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
     color: transparent;
 
     
@@ -845,6 +846,9 @@ main {
     gap: 2rem;
     flex-wrap: nowrap;
     flex-wrap: wrap;
+    box-sizing: border-box;
+    padding-left: 2vw;
+    padding-right: 2vw;
    
     
 
@@ -963,7 +967,7 @@ main {
     z-index: 1;
   
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
     color: transparent;
 
 
@@ -1376,7 +1380,7 @@ width: 100%;
     margin-top: 2rem;
     width:100%;
     background: linear-gradient(to right,  var(--color-blanco)30%,var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
     color: transparent;
 
 
@@ -1387,7 +1391,8 @@ width: 100%;
     top: 50;
     width:450px;
     text-align: justify;
-    background: #2d2c75b3;
+    border: 0.3vw solid #8987eb56;
+    background: #022447d8;
     border-radius: 20px;
     padding: 10px;
     transition: 0.5s;
@@ -1557,7 +1562,7 @@ transition: filter 0.3s ease, transform 0.3s
    
     width:100%;
     background: linear-gradient(to right,var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
+    background-clip: text !important;
     color: transparent;
     
 
@@ -1841,7 +1846,19 @@ font-size: 0.8rem;
     }
 
     .image-section  {
-        filter: drop-shadow(0px 0px 10px #8987eb)
+        filter: drop-shadow(0px 0px 10px #8987eb);
+        width: 380px; 
+        height: 380px;
+
+
+
+    }
+
+    .image-section img {
+    height: 375px;
+    width: 375px;
+
+
 
 
     }
@@ -2272,7 +2289,7 @@ font-size: 0.8rem;
 
     }
     .item{
-        width: 90vw;
+        width: 85vw;
     }
 
     .zone_1 p:first-child {
@@ -2285,6 +2302,21 @@ font-size: 0.8rem;
     .zone_1 p:nth-child(2) {
         font-size: 35px;
         text-align: center;
+
+    }
+
+    .image-section {
+        width: 320px; 
+    height: 320px;  
+
+
+    }
+
+
+    .image-section img {
+        width: 405px; 
+    height: 405px;  
+
 
     }
    
@@ -2318,5 +2350,16 @@ font-size: 0.8rem;
       min-width: 290px;
     
     }
+
+
+    .image-section {
+        width: 250px; 
+    height: 250px; 
+
+
+    }
+
+
+
     
     }
