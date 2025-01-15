@@ -159,3 +159,5 @@ accordionTitles.forEach((button) => {
     button.classList.toggle('no-border');
   });
 });
+
+
