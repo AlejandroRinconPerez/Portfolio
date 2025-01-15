@@ -450,10 +450,9 @@ header {
     font-weight: 400;
     font-size: 80px;
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
+    transform: translateZ(0);
     background-clip: text !important;
     transform: translateZ(0);
-
-
     color: transparent;
 
 }
@@ -1372,6 +1371,7 @@ width: 100%;
 
 
 
+
 }
 
 /* .item :hover{
@@ -1578,6 +1578,7 @@ transition: filter 0.3s ease, transform 0.3s
    
     width:100%;
     background: linear-gradient(to right,var(--color-texto-azul-claro),  var(--color-blanco));
+    transform: translateZ(0);
     background-clip: text !important;
     transform: translateZ(0);
 
@@ -1976,13 +1977,21 @@ font-size: 0.8rem;
 
 
 }
-@media(max-with: 821){
+@media(max-with: 850){
 
     .slider{
-        height: 50vh;
-        width: 85vw;
+        
+        width: 80vw;
 
-    }   
+    }
+    /* .item  {
+        filter: drop-shadow(0px 0px 10px #8987eb);
+        width: 380px; 
+        height: 380px;
+
+
+
+    } */
 
 
 }
