@@ -77,20 +77,18 @@ function loadShow() {
   const scaleStep = 0.2;
   const translateStep = 120;
 
-  
   const activeItem = items[active];
   activeItem.style.transform = `none`;
   activeItem.style.zIndex = 1;
   activeItem.style.filter = `none`;
   activeItem.style.opacity = 1;
 
-  
   for (let i = 0; i < itemsLength; i++) {
     if (i === active) continue;
 
     const offset = i - active;
-    const stt = Math.abs(offset); 
-    const direction = offset > 0 ? 1 : -1; 
+    const stt = Math.abs(offset);
+    const direction = offset > 0 ? 1 : -1;
 
     const transform = `translateX(${stt * translateStep * direction}px) scale(${
       1 - scaleStep * stt
@@ -100,7 +98,6 @@ function loadShow() {
     const filter = blurEffect;
     const opacity = stt > maxOpacityIndex ? 0 : 0.6;
 
-   
     const item = items[i];
     item.style.transform = transform;
     item.style.zIndex = zIndex;
@@ -108,7 +105,6 @@ function loadShow() {
     item.style.opacity = opacity;
   }
 }
-
 
 loadShow();
 
@@ -122,42 +118,43 @@ prev.onclick = function () {
   loadShow();
 };
 
+document.addEventListener("DOMContentLoaded", function () {
+  const titles = document.querySelectorAll(".accordion-title");
 
-document.addEventListener('DOMContentLoaded', function() {
-  const titles = document.querySelectorAll('.accordion-title');
+  titles.forEach((title) => {
+    title.addEventListener("click", function () {
+      const content = this.nextElementSibling;
 
-  titles.forEach(title => {
-      title.addEventListener('click', function() {
-          const content = this.nextElementSibling;
-
-        
-          document.querySelectorAll('.accordion-content').forEach(item => {
-              if (item !== content) {
-                  item.style.display = 'none';
-              }
-          });
-
-      
-          if (content.style.display === 'block') {
-              content.style.display = 'none';
-            
-          } else {
-              content.style.display = 'block';
-          }
+      document.querySelectorAll(".accordion-content").forEach((item) => {
+        if (item !== content) {
+          item.style.display = "none";
+        }
       });
+
+      if (content.style.display === "block") {
+        content.style.display = "none";
+      } else {
+        content.style.display = "block";
+      }
+    });
   });
 });
 
-
-
-const accordionTitles = document.querySelectorAll('.accordion-title');
-
+const accordionTitles = document.querySelectorAll(".accordion-title");
 
 accordionTitles.forEach((button) => {
-  button.addEventListener('click', () => {
-   
-    button.classList.toggle('no-border');
+  button.addEventListener("click", () => {
+    button.classList.toggle("no-border");
   });
 });
 
 
+// Selecciona todos los elementos <li>
+// Selecciona el contenedor <ul>
+const servicesList = document.querySelector('.servicescontainer ul');
+
+// Agrega un evento de clic al <ul>
+servicesList.addEventListener('click', () => {
+    // Alterna la clase 'active' en el <ul>
+    servicesList.classList.toggle('active');
+});
