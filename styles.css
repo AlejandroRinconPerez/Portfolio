@@ -447,7 +447,6 @@ header {
 
 .zone_1 p:nth-child(2) {
     color: var(--color-blanco);
-
     font-weight: 400;
     font-size: 80px;
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
@@ -1458,12 +1457,12 @@ transition: filter 0.3s ease, transform 0.3s
 
 .item p {
     padding:  10px 25px;
-    text-align: left;
+    text-align: justify;
 }
 
 .item a {
     padding:  3px 25px;
-    text-align: left;
+    text-align: center;
     color: var(--color-blanco);
     font-weight: 500;
     width: 100%;
@@ -1472,11 +1471,26 @@ transition: filter 0.3s ease, transform 0.3s
 
 }
 
-.item p:nth-child(2){
+.item a {
+    width: 100%;
+    font-size: 1.5rem;
+    justify-self: left;
+    text-decoration: none;
+    font-style: normal;
+
+
+    font-weight: 800;
+
+}
+
+.item p a:nth-child(2){
     width: 100%;
     text-align: left;
     font-size: 1.5rem;
     justify-self: left;
+    text-decoration: none;
+    text-align: justify;
+
 
     font-weight: 800;
     
