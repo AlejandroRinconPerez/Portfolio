@@ -446,7 +446,8 @@ header {
 }
 
 .zone_1 p:nth-child(2) {
-    color: var(--color-texto-gris);
+    color: var(--color-blanco);
+
     font-weight: 400;
     font-size: 80px;
     background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
@@ -454,6 +455,7 @@ header {
     background-clip: text !important;
     transform: translateZ(0);
     color: transparent;
+    width: 100%;
 
 }
 
@@ -464,10 +466,7 @@ header {
   
     
     width: 100%;
-    /* background: linear-gradient(to right,  var(--color-texto-azul-claro),  var(--color-blanco));
-    background-clip: text;
-    color: transparent; */
-
+    
 
 
 }
@@ -1526,6 +1525,7 @@ transition: filter 0.3s ease, transform 0.3s
 
 }
 .textservioces{
+    color: var(--color-blanco);
     width: 45%;
     font-size: 1.5rem;
     display: flex;
