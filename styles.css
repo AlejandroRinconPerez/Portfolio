@@ -1789,7 +1789,21 @@ font-size: 0.8rem;
     font-size: 1rem;
     display: flex;
     align-items: center;
+    transition: all 0.3s ease; 
+    width: fit-content;
+    
   }
+  
+  /* .footer-column ul li a:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.8), 
+                0 0 20px rgba(255, 255, 255, 0.6), 
+                0 0 30px rgba(255, 255, 255, 0.4); 
+    color: #ffffff; 
+
+  }
+   */
+
+
   
   .footer-column ul li a ion-icon  {
     width: 20px;
