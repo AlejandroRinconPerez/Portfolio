@@ -506,34 +506,28 @@ header {
 .button-like {
     display: inline-block; 
     padding: 10px 20px; 
-    font-size: 1.2rem; 
     font-weight: 200; 
     color:var(--color-blanco);
-    background: linear-gradient(to right, transparent 10%, var(--color-texto-azul-claro));
+ 
+    font-size: 1.5rem; 
+    display: inline-block; 
+    padding: 10px 20px; 
+    font-size: 1.5rem; 
+    font-weight: 700; 
+    color:var(--color-blanco);
+    background: linear-gradient(to right, transparent 30%, var(--color-texto-azul-claro));
     border: 2px solid var(--color-texto-azul-claro); 
     border-radius: 5px; 
     text-decoration: none; 
     transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; 
-
-
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    animation-name: pulse;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-    margin: 2.5rem 0;
-    font-weight: 200;
- 
-    font-size: 40px;
-    border: 2px solid var(--color-hover);
+    animation: pulse 1.5s infinite;
 
 
 
 }
 
 .button-like:hover {
-    background: linear-gradient(to right, transparent 40%, var(--color-texto-azul-claro));
+    background: linear-gradient(to right, transparent 50%, var(--color-texto-azul-claro));
     transform: scale(1.2); 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
@@ -673,12 +667,18 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin:1vh ;
    
     position: relative;
     border-radius: 50%;
     overflow: hidden;
     animation: spin 1s linear infinite ;
-    filter: drop-shadow(0px 0px 1px var(--color-texto-azul-claro));
+    filter: drop-shadow(0px 0px 10px var(--color-texto-azul-claro));
+    
+      
+
+
+    
    
    
     
@@ -789,7 +789,7 @@ main {
     display: inline-block; 
     padding: 10px 20px; 
     font-size: 1.2rem; 
-    font-weight: 200; 
+    font-weight: 500; 
     color:var(--color-blanco);
     background: linear-gradient(to right, transparent 10%, var(--color-texto-azul-claro));
     border: 2px solid var(--color-texto-azul-claro); 
@@ -939,6 +939,7 @@ main {
     font-size: 1rem;
     text-align: center;
     flex: 2;
+    line-height: 1.8;
 
     text-align: justify;
 }
@@ -1019,7 +1020,7 @@ main {
     padding: 3px;
     background: conic-gradient(from var(--angle), var(--color-texto-azul-claro), transparent);
     animation: spin 10s linear infinite;
-    border-radius: 10px;
+    border-radius: 15px;
 
 
 }
@@ -1839,6 +1840,12 @@ font-size: 0.8rem;
         display: none;
     }
 
+    .image-section  {
+        filter: drop-shadow(0px 0px 10px #8987eb)
+
+
+    }
+
   
 
     header {
@@ -2088,6 +2095,12 @@ font-size: 0.8rem;
     height: 75vh;
 }
 
+.image-section  {
+    filter: drop-shadow(0px 0px 10px #8987eb)
+
+
+}
+
 
     
 }
@@ -2161,6 +2174,11 @@ font-size: 0.8rem;
                 
               
                }
+               .image-section  {
+                filter: drop-shadow(0px 0px 10px #8987eb)
+        
+        
+            }
 
 
 }
@@ -2190,6 +2208,10 @@ font-size: 0.8rem;
     #h2services{
         font-size: 2rem;
     }
+
+    
+
+   
     
 
 
@@ -2216,16 +2238,7 @@ font-size: 0.8rem;
     }
 
 
-    .image-section {
-        width: 330px; 
-        height: 330px;  
-      
-       
-       
-        
-    
-         
-      }
+
       
       .image-section img {
         height: 335px;
