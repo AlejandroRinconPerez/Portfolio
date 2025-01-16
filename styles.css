@@ -352,7 +352,7 @@ header {
 .photo img {
 
     mask-image: linear-gradient(black 40%, transparent);
-    width: 45vw;
+    
     height: 100%;
 
 }
