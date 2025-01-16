@@ -50,6 +50,11 @@ body {
 
 }
 
+a {
+    color: var(--color-blanco);
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -240,6 +245,7 @@ header {
     top: 60%;
     z-index: 100;
     left: 9%;
+    transition: color 2s ease, filter 1s ease, transform 2s ease; 
 
 }
 
@@ -252,7 +258,7 @@ header {
     padding: 10px 35px;
     display: block;
     position: relative;
-    transition: color 1s ease, filter 1s ease, transform 1s ease; 
+    
     font-weight: 100;
     border-bottom: 1px solid #ffffff6c;
     border-radius: 5px;
