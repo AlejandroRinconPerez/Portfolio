@@ -345,6 +345,7 @@ header {
     overflow: hidden;
 
     position: relative;
+    
 
 
 }
@@ -711,7 +712,7 @@ main {
     /* border: 1px solid var(--color-blanco); */
     display: block;
     background: var(--color-negro);
-
+ 
 
 
 
@@ -1962,6 +1963,8 @@ main {
     .image-section img {
         height: 375px;
         width: 375px;
+        object-fit: cover;
+
 
 
 
@@ -2339,6 +2342,7 @@ main {
     .image-section img {
         height: 350px;
         width: 350pxx;
+        object-fit: cover;
 
 
 
@@ -2383,8 +2387,10 @@ main {
     }
 
 
+    .image-section img{
+        object-fit: cover;
 
-
+}
 
 
 
@@ -2424,6 +2430,11 @@ main {
 
 
     }
+
+    .image-section img{
+        object-fit: cover;
+
+}
 
 
     .slider {
