@@ -1376,7 +1376,7 @@ main {
 
 .slider {
     position: relative;
-    height: 600px;
+    height: 700px;
     overflow: hidden;
     display: flex;
     justify-content: space-around;
@@ -2056,7 +2056,7 @@ main {
 
 
     .slider {
-        height: 70vh;
+       
         width: 85vw;
 
     }
@@ -2290,10 +2290,13 @@ main {
 
     .item {
         width: 70vw;
-
-
-
     }
+
+        .slider {
+            height: 90vh;
+        }
+
+    
 
     .zone_1 {
         width: 100%;
@@ -2423,7 +2426,9 @@ main {
     }
 
 
-
+    .slider {
+        height: 95vh;
+    }
 
 
 
