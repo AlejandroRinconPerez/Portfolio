@@ -855,7 +855,7 @@ main {
 .aboutZone {
 
     display: flex;
-    width: 100%;
+    width: 90%;
     justify-content: space-around;
     align-items: center;
     /* min-height: 55vh; */
@@ -864,8 +864,8 @@ main {
     flex-wrap: nowrap;
     flex-wrap: wrap;
     box-sizing: border-box;
-    padding-left: 2vw;
-    padding-right: 2vw;
+    padding-left: 20px;
+    padding-right: 20px;
 
 
 
@@ -891,6 +891,8 @@ main {
     max-width: 500px;
     min-width: 350px;
     gap: 2rem;
+    
+  
 
 
 }
@@ -949,7 +951,7 @@ main {
 
 
 .aboutmetext p:nth-child(1) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     text-align: center;
     line-height: 1.6;
     font-weight: 900;
@@ -957,7 +959,7 @@ main {
 
 .aboutmetext p:nth-child(3) {
 
-    font-size: 1rem;
+    font-size: 1.3rem;
     text-align: center;
     flex: 2;
     line-height: 1.8;
@@ -1549,6 +1551,7 @@ main {
     min-height: 65vh;
     width: 100%;
     box-sizing: border-box;
+    padding: 1vw 6vw;
 
 
 }
